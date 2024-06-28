@@ -95,6 +95,18 @@ h6 {
   border-radius: 0.5rem;
 }
 
+
+.cont-form input:invalid {
+  border-color: red;
+  border-bottom: 5px solid red;
+}
+
+.cont-form input:focus{
+  background-color: transparent;
+  border-radius: 0rem;
+  border-bottom: 3px solid black;
+}
+
 .cont-form label {
   margin-top: 1rem;
   color: #202020;
@@ -114,6 +126,7 @@ h6 {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
 
 .cont-btns button {
   border: none;
