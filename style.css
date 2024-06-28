@@ -1,0 +1,170 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.cont {
+  margin: 5rem 7rem;
+  border: 1px solid #ffffff;
+  display: flex;
+  border-radius: 1rem;
+  background-color: #429affc9;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.144);
+}
+
+.cont-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  flex-basis: 2;
+}
+
+.cont-form h2 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.cont-form input {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.486);
+  border: none;
+  padding: 0.6rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  border-radius: 0.5rem;
+}
+
+.cont-form label {
+  margin-top: 1rem;
+  color: #202020;
+}
+
+.cont-info {
+  flex-basis: 70%;
+  color: #000000;
+  background: linear-gradient(#7fffd4, #2d8dfa70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.cont-btns button {
+  border: none;
+  background-color: aquamarine;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.cont-btns {
+  display: flex;
+  gap: 1rem;
+  align-self: center;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgb(14, 82, 150), rgb(2, 2, 2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width <= 760px) {
+
+
+  .cont {
+    border: 2px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    scale: .85;
+  }
+
+  .cont-form {
+    padding: 1.5rem;
+    order: 2;
+  }
+  
+
+  .cont-info {
+    margin: 0rem;
+    order: 1;
+    padding: 1.5rem;
+    font-size: 1rem;
+    background: none;
+    text-align: left;
+    display: block;
+  }
+}
